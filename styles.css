@@ -22,6 +22,7 @@
   text-align: center;
   padding-top: 80px;
   font-size: 2.5rem;
+  font-family: var(--tipo-title);
 }
 
 /* 1. Header */
@@ -89,7 +90,7 @@ section {
   align-items: flex-end;
   flex-direction: column;
   padding: 0px 50px 100px 50px;
-  text-align: justify;
+  text-align: end;
 }
 
 .container-img {
@@ -108,8 +109,6 @@ section {
 }
 
 #banner p {
-  font-weight: 400;
-  font-style: normal;
   padding-left: 50px;
 }
 
@@ -131,6 +130,7 @@ section {
 
 .card-img img {
   height: 250px;
+  width: 250px;
   border-radius: 150px;
 }
 
@@ -198,6 +198,7 @@ section {
 
 .container-grid-productos .card img {
   width: 100%;
+  height: 200px;
 }
 
 .card-title {
@@ -238,7 +239,7 @@ section {
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 .form-container {
@@ -333,7 +334,7 @@ footer {
   right: 3rem;
   width: 70px;
   height: 70px;
-  z-index: 100;
+  z-index: 9999;
   background-color: #27b85c;
   border-radius: 50%;
   font-size: 2.5rem;
@@ -355,4 +356,20 @@ footer {
 
 .btn-wsp:hover {
   transform: scale(1.1);
+}
+
+/* Móvil */
+@media only screen and (max-width: 575.98px) {
+}
+
+/* Tableta */
+@media only screen and (min-width: 576px) and (max-width: 991.98px) {
+}
+
+/* Escritorio pequeño */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Escritorio grande */
+@media only screen and (min-width: 1200px) {
 }
