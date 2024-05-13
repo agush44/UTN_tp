@@ -69,14 +69,43 @@ section {
 /* a. Banner */
 
 #banner {
+  max-width: 100vw;
   background-color: var(--color-secundario);
+  display: flex;
+  align-items: center;
 }
 
-#banner h1 {
+.container-banner,
+.container-img {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.container-banner {
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0px 50px 100px 50px;
+  text-align: justify;
+}
+
+.container-img {
+  padding-bottom: 80px;
+}
+
+.container-img img {
+  height: 600px;
+  width: 400px;
+  border-radius: 15px;
+}
+
+.container-banner h1 {
   font-family: var(--tipo-title);
+  font-size: 4rem;
 }
 
 #banner p {
   font-weight: 400;
   font-style: normal;
+  padding-left: 50px;
 }
