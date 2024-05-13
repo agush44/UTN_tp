@@ -359,19 +359,28 @@ footer {
 }
 
 /* Móvil */
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 480px) {
   li a {
     font-size: 0.7rem;
-    padding: 10px;
+    padding: 5px;
+  }
+
+  #banner {
+    flex-direction: column;
+  }
+
+  .container-banner {
+    align-items: center;
+    padding: 50px 0 50px 0;
+    text-align: center;
+  }
+
+  .container-banner h1 {
+    font-size: 3rem;
   }
 
   #banner p {
     padding: 15px 0 0 0;
-  }
-
-  .container-img img {
-    height: 400px;
-    width: 200px;
   }
 
   .container-grid-categorias {
