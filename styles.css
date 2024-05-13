@@ -1,8 +1,20 @@
+/* Ajustes generales */
+
+:root {
+  /* Colores (primario y secundario) */
+  --color-primario: #111111;
+  --color-secundario: #fff;
+
+  /* Tipografías (para títulos y textos) */
+  --tipo-title: "Lobster", sans-serif;
+  --tipo-text: "Poppins", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--tipo-text);
 }
 
 /* 1. Header */
@@ -10,7 +22,7 @@
 header {
   max-width: 100vw;
   height: 80px;
-  background-color: #111111;
+  background-color: var(--color-primario);
   display: flex;
   justify-content: space-between;
 }
@@ -36,9 +48,35 @@ header img {
 li a {
   text-decoration: none;
   padding: 20px;
-  color: #fff;
+  color: var(--color-secundario);
 }
 
 li a:active {
-  color: #fff;
+  color: var(--color-secundario);
+}
+
+/* 2. Main */
+
+main {
+  max-width: 100vw;
+}
+
+section {
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
+/* a. Banner */
+
+#banner {
+  background-color: var(--color-secundario);
+}
+
+#banner h1 {
+  font-family: var(--tipo-title);
+}
+
+#banner p {
+  font-weight: 400;
+  font-style: normal;
 }
