@@ -361,7 +361,7 @@ footer {
 /* Móvil */
 @media only screen and (max-width: 480px) {
   li a {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 5px;
   }
 
