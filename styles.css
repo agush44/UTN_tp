@@ -234,13 +234,47 @@ section {
 #contacto {
   background-color: var(--color-terciario);
   min-height: 70vh;
-}
-
-#contacto form div {
   display: flex;
   flex-direction: column;
-  width: 30%;
   align-items: center;
+}
+
+.form-container {
+  background-color: var(--color-secundario);
+  width: 50%;
+  height: 50vh;
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 7px 10px 31px -8px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 7px 10px 31px -8px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 7px 10px 31px -8px rgba(0, 0, 0, 0.73);
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container form div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+label {
+  align-self: flex-start;
+  padding: 0 0 5px 10px;
+}
+
+input,
+textarea {
+  width: 90%;
 }
 
 /* 3. Footer */
@@ -261,6 +295,8 @@ footer {
   transform: skewY(7deg);
   transform-origin: top right;
 }
+
+/* Btn WhatsApp */
 
 .container-wsp {
   position: relative;
