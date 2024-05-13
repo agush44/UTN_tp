@@ -74,7 +74,6 @@ section {
 
 #banner {
   max-width: 100vw;
-  background-color: var(--color-secundario);
   display: flex;
   align-items: center;
 }
@@ -182,12 +181,13 @@ section {
 }
 
 .container-grid-productos .card {
+  font-size: 0.9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 250px;
-  height: 400px;
+  height: 450px;
   border: 0 solid var(--color-secundario);
   border-radius: 10px;
   overflow: hidden;
@@ -208,7 +208,7 @@ section {
 .card-title,
 .card-price,
 .btn-card {
-  padding: 15px;
+  padding: 20px;
 }
 
 .btn-card {
@@ -272,7 +272,7 @@ form {
 
 label {
   align-self: flex-start;
-  padding: 0 0 5px 10px;
+  padding: 0 0 5px 15px;
 }
 
 input,
@@ -360,16 +360,87 @@ footer {
 
 /* Móvil */
 @media only screen and (max-width: 575.98px) {
+  li a {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  #banner p {
+    padding: 15px 0 0 0;
+  }
+
+  .container-img img {
+    height: 400px;
+    width: 200px;
+  }
+
+  .container-grid-categorias {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-img img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .cat-card {
+    padding: 50px 0 50px 0;
+  }
+
+  .container-grid-productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container-img img {
+    height: 500px;
+    width: 300px;
+  }
+
+  .form-container {
+    width: 60%;
+  }
+
+  .form-container form div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  form .btn-cat-card {
+    margin-top: 30px;
+    width: 100px;
+  }
 }
 
 /* Tableta */
 @media only screen and (min-width: 576px) and (max-width: 991.98px) {
-}
+  .card-img img {
+    height: 220px;
+    width: 220px;
+  }
 
-/* Escritorio pequeño */
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-}
+  .cat-card {
+    padding: 90px 0 90px 0;
+  }
 
-/* Escritorio grande */
-@media only screen and (min-width: 1200px) {
+  .container-grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container-img img {
+    height: 500px;
+    width: 300px;
+    border-radius: 15px;
+  }
+
+  .form-container form div {
+    width: 70%;
+  }
+
+  form .btn-cat-card {
+    width: 250px;
+  }
 }
